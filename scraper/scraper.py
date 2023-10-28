@@ -1,6 +1,7 @@
 import requests
 import time
 import re
+import os
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
@@ -43,8 +44,10 @@ def get_next_page_url(soup):
     return None
 
 def write_to_file(blog_urls):
-    with open('blog_urls.txt', 'w') as f:
-        f.write('\n'.join(blog_urls))
+    os.makedirs('data', exist_ok=True)  # Create 'data' directory if it doesn't exist
+    with open('data/blog_urls.txt', 'w') as f:
+        for url in blog_urls:
+            f.write(url + '\n')
 
 def main():
     base_url = "https://blog.samaltman.com"
