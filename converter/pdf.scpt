@@ -27,8 +27,8 @@ repeat with blogUrl in blogUrls
             click menu button "PDF" of sheet 1 of window 1 of application process "Safari"
             click menu item "Save as PDF…" of menu of menu button "PDF" of sheet 1 of window 1 of application process "Safari"
             delay 2 -- wait a bit
-            -- Construct the filename based on the blog's URL
-            set theFileName to "/Users/isol/Documents/" & (do shell script "basename " & quoted form of blogUrl) & ".pdf"
+            -- Construct the filename based on the blog's URL, now saving to the "posts" folder
+            set theFileName to "/Users/isol/Documents/samablog/posts/" & (do shell script "basename " & quoted form of blogUrl) & ".pdf"
             set value of text field 1 of sheet 1 of window 1 of application process "Safari" to theFileName
             click button "Save" of sheet 1 of window 1 of application process "Safari"
         end tell
