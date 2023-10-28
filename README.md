@@ -1,5 +1,7 @@
-Believe Altman has certain direction in mind
-Reading every blog post tonight
-Testing Cursor IDE
-Scrapping links
-Converting to PDF for annotation
+- Believe Altman has certain direction in mind
+- Reading every blog post tonight
+- Testing Cursor IDE
+- Scrapping links
+- Converting to PDF for annotation
+- Testing AppleScript on new mac
+- Testing Apple Script Editor
